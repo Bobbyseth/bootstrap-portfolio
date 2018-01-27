@@ -1,77 +1,110 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Seth Griggs' Portfolio</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-9 navBottom">
-          <h1 class="name">Seth Griggs</h1>
+
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="logo">Seth Griggs</a>
         </div>
-        <div class="col-md-3 navBottom">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-link">About</button>
-            <button type="button" class="btn btn-link">Portfolio</button>
-            <button type="button" class="btn btn-link">Contact</button>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
+            <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of content wrap -->
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <form class="contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" />
+              </div>
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 contactForm">
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Name</label>
-              <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email</label>
-              <input type="Name" class="form-control" id="exampleFormControlInput2" placeholder="example@gmail.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-            </div>
-        </form>
-        </div>
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-3 connect">
-          <div class="card">
-            <div class="card-body">
-              <h2>Connect with Me</h2>
-              <hr>
-              <img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github">
-              <img class="icon" src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="Linkdin">
-              <img class="icon" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.svg?v=6e4af45f4d66" alt="Stack Overflow">
-            </div>
+          <div class="col-md-4">
+
+            <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                  <img src="assets/images/github.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/images/linkedin.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/images/stackoverflow.png" alt="" class="connect-with-me-photo">
+                </div>
+              </div>
+            </section>
+
+            <!-- End of the Connect With Me Area -->
           </div>
-        </div>
-        <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 footer">
-            <nav class="navbar footer navbar-light bg-dark">
-              <span class="navbar-brand mb-0 h1">Copyright@ Seth Griggs 2018</span>
-            </nav>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
+    <!-- End of content wrap -->
 
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2017 Your Name
+      </p>
+    </footer>
+    <!-- End of footer -->
 
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   </body>
+
 </html>
